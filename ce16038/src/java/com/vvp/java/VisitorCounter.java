@@ -15,37 +15,40 @@ import javax.servlet.http.*;
  *
  * @author Lenovo
  */
-public class MultTable extends HttpServlet {
-  
+public class VisitorCounter extends HttpServlet {
+
    
     /** 
     * Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
     * @param request servlet request
     * @param response servlet response
     */
+    public int counter;
+   
+    public void init(ServletConfig config) throws ServletException {
+        
+      counter=0;
+    }
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
-        HttpSession session = request.getSession();
+        
         try {
-            if(session.getAttribute("isAuth")==null)
-            {
-              response.sendRedirect("loginFront.html");  
-            }
-            else
-            {     
-              String mulno = request.getParameter("mulno");
-              int no = Integer.parseInt(mulno);
-             
-              out.print("<br/>");
-              for(int i=1;i<=10;i++)
-              {
-                int ans=i*no;
-                out.print(no + " " + "*" + i + "=" + ans + "<br/>");
-              }
-              
-            }   
+            HttpSession session = request.getSession();
+            /* TODO output your page here
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet VisitorCounter</title>");  
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Servlet VisitorCounter at " + request.getContextPath () + "</h1>");
+            out.println("</body>");
+            out.println("</html>");
+            */
+            if(session.isNew())
+                counter++;
+            out.print(counter);
         } finally { 
             out.close();
         }

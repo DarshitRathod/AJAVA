@@ -10,6 +10,14 @@
         <servlet-name>MultTable</servlet-name>
         <servlet-class>com.vvp.java.MultTable</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>VisitorCounter</servlet-name>
+        <servlet-class>com.vvp.java.VisitorCounter</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>StudentValidation</servlet-name>
+        <servlet-class>com.vvp.java.StudentValidation</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginController</servlet-name>
         <url-pattern>/logincontroller.do</url-pattern>
@@ -17,6 +25,14 @@
     <servlet-mapping>
         <servlet-name>MultTable</servlet-name>
         <url-pattern>/multtable</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VisitorCounter</servlet-name>
+        <url-pattern>/visitorcounter.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StudentValidation</servlet-name>
+        <url-pattern>/studentvalidation</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

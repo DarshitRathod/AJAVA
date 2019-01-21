@@ -30,15 +30,19 @@ public class LoginController extends HttpServlet {
         try {
             String logname = request.getParameter("logname");
             String logpassword = request.getParameter("logpassword");
-            
-            if(logname.equals("admin") && logpassword.equals("admin"))
-            {
-                out.print("welcome" +" "+ logname);
-            }
-            else
-            {
-                out.print("<h2 style='color:red'>invalid information</h2>");
-            }    
+               
+                if(logname.equals("admin") && logpassword.equals("admin"))
+                {
+                    //out.print("welcome" +" "+ logname);
+                    session.setAttribute("isAuth","true");
+                    response.sendRedirect("multtable.html");
+                }
+                else
+                {
+                    out.print("<h2 style='color:red'>invalid information</h2>");
+                } 
+              
+                
         } finally { 
             out.close();
         }
