@@ -1,0 +1,107 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Google Form</title>
+</head>
+<style>
+th, td {
+		  padding: 5px;
+		  text-align: left;    
+		}
+		th{
+			width:20%;
+		}
+		td{
+			
+			letter-spacing:0.5px;
+		}
+		table{
+			width:50%;
+			margin-left:200px;
+			
+		}
+</style>
+
+<body>
+	<form method="get">
+		<center>
+		<table cellspacing="10">
+			<img src="google.png" style="width:50px; hight:50px; margin-top:150px" alt="googlelogo">
+			<legend style="text-align:center;margin-left:0.9em;color:black;margin:0px;font-size:30px;font:Copperplate Gothic Light; font-family:Google Sans;font-family:sans-serif;"><b>Google Singup Form</b></legend>
+			<br/>	
+				<tr>
+					<th>
+						First Name:
+					</th>
+					<td>
+						<input type="text" name="stfirstname" size="50" placeholder="firstname" />
+					</td>
+				</tr>	
+				<br/>			
+				<tr>	
+					<th>
+						Last Name:
+					</th>
+					<td>
+						<input type="text" name="stlastname" size="50" placeholder="lastname" />
+					</td>
+				</tr>
+				<tr>	
+					<th>
+						User Name:
+					</th>
+					<td>
+						<input type="text" name="stusername" size="50" placeholder="username" />
+					</td>
+				</tr>
+				<tr>	
+					<th>
+						Password:
+					</th>
+					<td>
+						<input type="password" name="stpassword" size="50" placeholder="password" /> 
+					</td>
+				</tr>	
+				<tr>	
+					<th> 
+						Confirm Password:
+					</th>
+					<td>
+						<input type="password" name="stconfirmpassword" size="30" placeholder="confirmpassword" />
+					</td>
+				</tr>	
+				<tr>
+					<th>
+						Country:
+					</th>
+					<td>
+						<select name="country">   
+							<option value="ind">India</option>
+							<option value="pak">Pakistan</option>
+							<option value="uk">UK</option>
+							<option value="fr">France</option>
+							<option value="sp">Spain</option>
+						</select>
+					</td>
+				</tr>
+				<tr>	
+					<th>
+						Zipcode:
+					</th>
+					<td>
+						<input type="number" name="stzip" size="50" placeholder="zipcode" />
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="submit" value="Submit" />
+						<input type="reset" value="Reset" class="nowrap" />
+					</td>	
+				</tr>
+			</center>
+		</table>
+	</form>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE>
+<html>
+<head>
+	<style>
+		table, th, td {
+		  border: 1px solid black;
+		  border-collapse: collapse;
+		  
+		}
+		th, td {
+		  padding: 5px;
+		  text-align: left;    
+		}
+		th{
+			width:20%;
+		}
+		td{
+			width:100%;
+			letter-spacing:0.5px;
+		}
+		table{
+			width:50%;
+			background-color:#DCDCDC;
+		}
+			
+            	
+	</style>
+	<title>GTUstudentData</title>
+	<meta name="viewport" content="width=device-width , intial-scale=1.0" />
+</head>
+<body style="background-color:#808080">
+    <form method="get">
+	<center>
+		<br/>
+		<img src="gtu.png" alt="gtulogo" style="hight:140px; width:140px" />
+		<br/>
+		<br/>
+		<legend style="text-align:center;margin-left:0.9em;color:black;margin:0px;font-size:30px;font:Copperplate Gothic Light"><b><u>GTU STUDENT INFORMATION</u></b></legend>
+		<br/>
+		<br/>
+		<table>
+			<tr>
+				<th>
+					Name:
+				</th>
+				<td>
+					<input type="text" name="stname" size="50" />
+				</td>
+			</tr>
+			<tr>
+				<th>
+					Enrollment:  
+				</th>
+				<td>
+					<input type="text" name="enrollment" />
+				</td>
+			</tr>	
+			<tr>
+				<th>
+					Gender:
+				</th>
+				<td>
+					<input type="radio" name="gender" value="Male" />Male
+					<input type="radio" name="gender" value="female" />Female 	
+				</td>
+			</tr>	
+			<tr>
+				<th>
+					Sem:
+				</th>
+				<td>
+					<select name="sem">   
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+					</select>   
+				</td>
+			</tr>	
+			<tr>
+				<th>
+					Branch:
+				</th>
+				<td>
+					<select name="branch">   
+						<option value="CE">Computer</option>
+						<option value="EC">EC</option>
+						<option value="CH">CHEMICAL</option>
+						<option value="ME">MECHANICAL</option>
+						<option value="EE">ELECTRIC</option>
+					</select>
+				</td>
+			</tr>	
+			
+			<tr>
+				<th>
+					Subject:
+				</th>
+				<td>
+					<input type="checkbox" name="sub" value="OOPJ" />OOPJ<br/>
+					<input type="checkbox" name="sub" value="OOPC" />OOPC<br/>
+					<input type="checkbox" name="sub" value="OS" />OS<br/>
+					<input type="checkbox" name="sub" value="CO" />CO<br/>
+					<input type="checkbox" name="sub" value="DBMS" />DBMS<br/>
+					<input type="checkbox" name="sub" value="SE" />SE<br/>
+					<input type="checkbox" name="sub" value="TOC" />TOC<br/>
+					<input type="checkbox" name="sub" value=".NET" />.NET<br/>		
+				</td>
+			</tr>			
+			
+		</table>
+
+		<br/>
+		<br/>
+		<input type="submit" value="Submit" />
+		<input type="reset" value="Reset" class="nowrap" />
+	</center>
+	</form>
+</body>
+</html>
+    	 
